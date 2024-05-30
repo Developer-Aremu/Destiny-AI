@@ -1,0 +1,190 @@
+:root {
+    --primary-colour: rgb(38, 7, 72);
+  }
+  button {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    background-color: var(--primary-colour);
+    border-radius: 7px;
+    border: 0px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    
+  }
+  
+  .logo{
+      cursor: pointer;
+  }
+  a:visited{
+      text-decoration:underline 4px solid rgb(128, 0, 0);
+  
+  }
+  a:focus{
+      background-color: green;
+      padding-left: 5px;padding-right: 5px;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  
+    font-family: arial;
+  }
+  
+  header {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+  
+    background-image: url(/Destiny/Images/mikkel-bech-yjAFnkLtKY0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    padding-bottom: 120px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      padding: 10px;
+      background-color: var(--primary-colour);
+      color: white;
+      border-radius: 2px;
+    }
+  }
+  
+  nav {
+    display: flex;
+    gap: 40px;
+  
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  
+  .Section-1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  
+    h1 {
+      padding-top: 50px;
+      font-size: 70px;
+      width: 700px;
+      margin-bottom: 0px;
+    }
+    p {
+      width: 680px;
+      margin-top: 20px;
+    }
+  }
+
+  .input-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input{
+        height: 30px;
+        width: 500px;
+        text-align: center;
+        border-radius: 20px;
+        border: 0px;
+        opacity: 0.3;
+        padding-right: 30px;
+        
+    }
+    input::placeholder{
+        color:var(--primary-colour);
+        font-weight: bold;
+    }
+
+    input:focus{
+        border: none;
+    }
+}
+
+
+.container-dropdown{
+    position: absolute;
+    padding-top: 20px; padding-bottom: 20px;
+    padding-right: 60px; padding-left: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    
+
+    a{
+        color: white;
+        
+    }
+}
+
+.wrapper:hover .container-dropdown{
+    display: block;
+}
+
+.wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.features:hover::-ms-tooltip{
+    color: red;    
+}
+
+.pop-up{
+    padding: 20px;
+    display: flex;
+    background-color: var(--primary-colour);
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    height:200px;
+    top: 300px;
+    right: 400px;
+    display: none;
+    
+    
+
+    img{
+        width: 50px;
+    }
+
+    h2{
+        margin: 0px;
+        color: white;
+    }
+    p{
+        color: white;
+    }
+
+}
+
+.button-wrapper{
+    display: inline-block;
+    position: relative;
+}
+
+button:focus + .pop-up{
+    display: block;
+    blur
+}
